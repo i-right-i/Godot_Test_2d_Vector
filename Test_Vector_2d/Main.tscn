@@ -1,0 +1,45 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://center.png" type="Texture" id=1]
+[ext_resource path="res://Sprite.gd" type="Script" id=2]
+[ext_resource path="res://ship1.png" type="Texture" id=3]
+[ext_resource path="res://MySprite.gd" type="Script" id=4]
+[ext_resource path="res://Button_Plus.gd" type="Script" id=5]
+[ext_resource path="res://Button_Move.gd" type="Script" id=6]
+[ext_resource path="res://Button_Minus.gd" type="Script" id=7]
+
+[node name="Main" type="Node2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="MySprite" type="Sprite" parent="."]
+position = Vector2( -80, 280 )
+texture = ExtResource( 3 )
+hframes = 4
+script = ExtResource( 4 )
+
+[node name="Button_Plus" type="Button" parent="."]
+margin_left = 591.856
+margin_top = 127.622
+margin_right = 711.856
+margin_bottom = 162.622
+text = "Rotate +"
+script = ExtResource( 5 )
+
+[node name="Button_Move" type="Button" parent="."]
+margin_left = 459.26
+margin_top = 95.7008
+margin_right = 579.26
+margin_bottom = 130.701
+text = "Move"
+script = ExtResource( 6 )
+
+[node name="Button_Minus" type="Button" parent="."]
+margin_left = 319.781
+margin_top = 128.983
+margin_right = 439.781
+margin_bottom = 163.983
+text = "Rotate -"
+script = ExtResource( 7 )
